@@ -1,6 +1,6 @@
 // products.js
 // image, brand, gears, frame-size, price
-let prodObjArray = [
+let bikes = [
   {
   img: "http://lorempixel.com/400/200/",
   brand: "Badass Bikes",
@@ -32,15 +32,24 @@ let prodObjArray = [
 }
 ];
 
-// maybe this is a bad idea below, maybe it shouldn't be totally dynamic, maybe we should just do 10-12 bikes
-// and have a fixed inventory at that?
+function renderBikes(bike){
+  let bikeCount = 1;
+  let bikeClone = $('#card1').clone();
+  for (const bike in bikes {
+    bikeCount++;
+    if bikeCount
+    let bikeRow = $("<div>").attr("class", "row");
 
-// function renderProducts(prodObjArray){
-//   const bikeCase = $("#bikeCase");
-//   for(const bike in bikes){
-//     let bikeRow = $("<div>").attr("class", "row");
-//     let bikeDiv = $("<div>").attr("class", "col s12 m6 l3");
-//     let bikeCard = $("<div>").attr("class", "card");
-//     let bikeImg
-//   }
-// }
+
+  })
+}
+
+function renderProducts(prodObjArray){
+  const bikeCase = $("#bikeCase");
+  for(const bike in bikes){
+    let bikeRow = $("<div>").attr("class", "row");
+    let bikeDiv = $("<div>").attr("class", "col s12 m6 l3");
+    let bikeCard = $("<div>").attr("class", "card");
+    let bikeImg
+  }
+}
