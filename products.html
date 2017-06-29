@@ -37,7 +37,32 @@
 
     <main class="section container">
       <div id="bikeCase">
-        <div class="row"></div>
+        <div class="row" id="row1">
+
+          <!-- delete this -->
+          <!-- <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://lorempixel.com/400/200/">
+              </div>
+              <span class="card-title" id="gears">Gears</span>
+              <span class="card-title" id="brand">Brand</span>
+              <div class="tall card-content">
+                <p id="description">I've got a bike. You can ride it if you like.
+                It's got a basket, a bell that rings and
+                Things to make it look good.
+                I'd give it to you if I could, but I borrowed it.</p>
+                <p id="frame_size">Frame Size: 500cm</p>
+              </div>
+              <div class="card-action">
+                <a href="#" id="price">Only: $10</a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+        <div class="row" id="row2"></div>
+        <div class="row" id="row3"></div>
 
       </div>
     </main>
@@ -89,20 +114,22 @@
 
 
     <!-- this is the template bike card to clone -->
-   <div class="col s12 m6 l3" style="visibility:hidden" id="card1">
+   <div class="col s12 m6 l4 cardTemp" style="visibility:hidden">
      <div class="card">
        <div class="card-image">
-         <img src="http://lorempixel.com/400/200/">
-         <span class="card-title">Card Title</span>
+         <img class="bikeImg" src="http://lorempixel.com/400/200/">
        </div>
+       <span class="card-title gears">Gears</span>
+       <span class="card-title brand">Brand</span>
        <div class="tall card-content">
-         <p>I've got a bike. You can ride it if you like.
+         <p class="description">I've got a bike. You can ride it if you like.
          It's got a basket, a bell that rings and
          Things to make it look good.
          I'd give it to you if I could, but I borrowed it.</p>
+         <p class="frame_size">Frame Size: 500cm</p>
        </div>
        <div class="card-action">
-         <a href="#">I'm a bike</a>
+         <a href="#" class="price">Only: $10</a>
        </div>
      </div>
    </div>
