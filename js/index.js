@@ -49,7 +49,7 @@ function renderBikes(bikes){
     bikeClone.find(".description").text(description);
     bikeClone.find(".frame_size").text("Frame Size: " + frame_size);
     bikeClone.find(".price").attr("id", anchorID);
-    bikeClone.find(".price").text("Ride me home for: $" + price);
+    bikeClone.find(".price").text("$" + price);
     if (i < 3){
       $("#featureRow").append(bikeClone);
     }
@@ -58,11 +58,13 @@ function renderBikes(bikes){
 renderBikes(bikes);
 
 //add to cart
-
+let cartCounter = 0;
 //get price of item
 $('.price').on('click', function(event) {
-  const clicked = event.target.innerText;
-  const dollar = clicked.indexOf('$');
-  const price = clicked.slice(dollar + 1, -1);
-
-})
+  // const clicked = event.target.innerText;
+  // const dollar = clicked.indexOf('$');
+  // const price = clicked.slice(1, -1);
+  // console.log(dollar);
+  // console.log(price);
+  cartCounter++;
+});
