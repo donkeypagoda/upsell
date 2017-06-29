@@ -6,7 +6,11 @@
 /*Index page focussed styles*/
 .carousel-item {
   width: 100%;
-  
+}
+
+.email {
+  padding-top: 25px;
+  padding-left: 15px;
 }
 
 
