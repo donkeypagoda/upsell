@@ -6,7 +6,7 @@
 /*Index page focussed styles*/
 .carousel-item {
   width: 100%;
-  
+
 }
 
 
@@ -35,4 +35,8 @@
 
 .tall {
   height: 100%;
+}
+
+.descipHeight {
+  height: 90px;
 }
