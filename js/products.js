@@ -28,7 +28,7 @@ let prodObjArray = [
   gears: "2πr²",
   frame_size: "itsy bitsy",
   price: "€3,458",
-  description: "I've got a bike. You can ride it if you like. It's got a basket, a bell that rings and Things to make it look good. I'd give it to you if I could, but I borrowed it. You're the kind of girl that fits in with my world."
+  description: "I've got a bike. You can ride it if you like. It's got a basket, a bell that rings and Things to make it look good. I'd give it to you if I could, but I borrowed it."
 }
 ];
 
