@@ -2,3 +2,23 @@
 div {
   border: 1px solid red;
 }
+
+.logo-sizing {
+  height: 100%;
+  padding: 4px
+}
+.nav-band {
+  /*min-height: 85px*/
+}
+
+#rightnav {
+  height: 100%;
+}
+
+#btn-small {
+    padding: 0 0.3rem;
+}
+
+.cyclecart {
+  margin: auto;
+}
