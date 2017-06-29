@@ -19,8 +19,7 @@
 /* Products Page focussed styles*/
 .logo-sizing {
   height: 100%;
-  padding: 6px;
-  border-radius: 0 33% 33% 0;
+  padding: 3px 26px 3px 6px;
   margin-right: 25px;
 }
 .nav-band {
