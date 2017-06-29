@@ -1,6 +1,6 @@
 // products.js
 // image, brand, gears, frame-size, price
-let prodObjArray = [
+let bikes = [
   {
   img: "http://lorempixel.com/400/200/",
   brand: "Badass Bikes",
@@ -32,15 +32,34 @@ let prodObjArray = [
 }
 ];
 
-// maybe this is a bad idea below, maybe it shouldn't be totally dynamic, maybe we should just do 10-12 bikes
-// and have a fixed inventory at that?
-
-// function renderProducts(prodObjArray){
-//   const bikeCase = $("#bikeCase");
-//   for(const bike in bikes){
-//     let bikeRow = $("<div>").attr("class", "row");
-//     let bikeDiv = $("<div>").attr("class", "col s12 m6 l3");
-//     let bikeCard = $("<div>").attr("class", "card");
-//     let bikeImg
-//   }
-// }
+function renderBikes(bikes){
+  for (let i = 0; i < bikes.length; i++) {
+    let bikeClone = $(".cardTemp").clone();
+    let bikeID = "bike_" + i;
+    let img = bikes[i].img;
+    let gears = bikes[i].gears;
+    let brand = bikes[i].brand;
+    let description = bikes[i].description;
+    let frame_size = bikes[i].frame_size;
+    let price = bikes[i].price;
+    bikeClone.find(".bikeImg").attr("src", bikes[i].img);
+    bikeClone.find(".gears").text(bikes[i].gears);
+    bikeClone.find(".brand").text(bikes[i].brand);
+    bikeClone.find(".description").text(bikes[i].description);
+    bikeClone.find(".frame_size").text(bikes[i].frame_size);
+    bikeClone.find(".price").attr("id", BikeID);
+    bikeClone.find(".price").text("Ride me home for: " + bikes[i].price);
+    if (i < 3){
+      $("#row0").append(bikeClone);
+    }
+    else if (i < 6){
+      $("#row1").append(bikeClone)
+    }
+    else if (i < 9){
+      $("#row2").append(bikeClone)
+    }
+    else if (i < 11){
+      $("#row3").append(bikeClone)
+    }
+  }
+}
