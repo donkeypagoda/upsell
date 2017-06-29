@@ -19,7 +19,9 @@
 /* Products Page focussed styles*/
 .logo-sizing {
   height: 100%;
-  padding: 6px
+  padding: 6px;
+  border-radius: 0 33% 33% 0;
+  margin-right: 25px;
 }
 .nav-band {
   /*min-height: 85px*/
@@ -57,9 +59,12 @@
 .brand {
   margin-bottom: 0px !important;
   /*background-color: cyan;*/
-  color:
   display: block;
   line-height: 32px;
   font-size: 24px;
   font-weight: 300;
 }
+
+/*.droppie {
+  background-color: cyan
+}*/
