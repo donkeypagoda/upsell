@@ -9,33 +9,153 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <!-- javascript -->
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script defer type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script defer type="text/javascript" src="js/materialize.min.js"></script>
     <!--Our JS link -->
-    <script type="text/javascript" src="js/products.js"></script>
+    <script defer type="text/javascript" src="js/products.js"></script>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
-
     <title>UpCycle!</title>
   </head>
 
   <body>
-    <nav>
-      <div class="nav-wrapper nav-band cyan">
-        <a href="#"><img class="logo-sizing" src="img/logo.png"></a>
-        <!-- <ul class="left hide-on-med-and-down">
-          <li><a href="#" class="brand-logo"><img class="logo-sizing" src="img/logo.png"></a></li>
-        </ul> -->
-        <div id="rightnav" class="valign-wrapper right hide-on-med-and-down">
-          <ul id="nav-mobile">
-            <li><a href="#">Bikes For Sale</a></li>
-            <li><a id="btn-small" class="cyclecart waves-effect waves-light btn amber darken-3"><i class="material-icons amber darken-3">shopping_cart</i></a></li>
-          </ul>
+    <header>
+      <nav>
+        <div class="nav-wrapper nav-band cyan">
+          <a href="#"><img class="logo-sizing" src="img/logo.png"></a>
+          <div id="rightnav" class="valign-wrapper right hide-on-med-and-down">
+            <ul id="nav-mobile">
+              <li><a href="#">Bikes For Sale</a></li>
+              <li><a id="btn-small" class="cyclecart waves-effect waves-light btn amber darken-3"><i class="material-icons amber darken-3">shopping_cart</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section container">
+      <div id="#bikeCase">
+  <!-- non-dynamic test row of bikes  -->
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://lorempixel.com/400/200/">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I've got a bike. You can ride it if you like.
+                It's got a basket, a bell that rings and
+                Things to make it look good.
+                I'd give it to you if I could, but I borrowed it.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">I'm a bike</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://lorempixel.com/400/200/">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I've got a bike. You can ride it if you like.
+                It's got a basket, a bell that rings and
+                Things to make it look good.
+                I'd give it to you if I could, but I borrowed it.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">I'm a bike</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://lorempixel.com/400/200/">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I've got a bike. You can ride it if you like.
+                It's got a basket, a bell that rings and
+                Things to make it look good.
+                I'd give it to you if I could, but I borrowed it.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">I'm a bike</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://lorempixel.com/400/200/">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I've got a bike. You can ride it if you like.
+                It's got a basket, a bell that rings and
+                Things to make it look good.
+                I'd give it to you if I could, but I borrowed it.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">I'm a bike</a>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- end test row -->
+      </div>
+    </main>
+
+    <footer class="cyan">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 m4 s12">
+            <h5 class="white-text">Stop by</h5>
+            <div class="center-align">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5375.576424575366!2d-122.35174913118693!3d47.649682279085454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015012f8cec29%3A0x44eb64e227f59d11!2sTroll+Ave+N%2C+Seattle%2C+WA+98103!5e0!3m2!1sen!2sus!4v1498691152184"
+                width="250" height="250" frameborder="0" style="border:0"  allowfullscreen></iframe>
+              </div>
+            <p class="grey-text text-lighten-4 center-align">Troll Ave N, Seattle, WA 98103</p>
+          </div>
+          <div class="col l3 m3 s12">
+            <h5 class="white-text">Our mission</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="col l2 m3 s12">
+            <h5 class="white-text">Links 2</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m2 s12">
+            <h5 class="white-text">Links 3</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
+      <div class="footer-copyright cyan">
+        <div class="container">
+          © 2017 Copyright Christopher Stewart and Heather Arvidson
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
 
 
