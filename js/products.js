@@ -37,7 +37,9 @@ function renderBikes(bikes){
 }
 renderBikes(bikes);
 
-function bikeSort(bikes){
-  
+
+
+function bikeSort(bikes, sortType){
+
 
 }
