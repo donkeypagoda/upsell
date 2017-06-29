@@ -28,19 +28,32 @@ $('.carousel').on('mouseup', function(event) {
   console.log(event);
 })
 
-// $('.carousel').on('wheel', function() {
-//   timer = setTimeout(autoplay, 5000);
-//   console.log("wheel event");
-// });
+//feature bikes
+function renderBikes(bikes){
+  for (let i = 0; i < 12; i++) {
+    let bikeClone = $("#featureTemp").clone();
+    let bikeID = "bike_" + i;
+    let img = bikes[i].img;
+    let gears = bikes[i].gears;
+    let brand = bikes[i].brand;
+    let description = bikes[i].description;
+    let frame_size = bikes[i].frame_size;
+    let price = bikes[i].price;
+    let anchorID = "bike_anchor_" + i;
 
-//  $('.carousel').carousel('next', 3); // Move next n times.
-//  // Previous slide
-//  $('.carousel').carousel('prev', 4); // Move prev n times.
-//  // Set to nth slide
-//  $('.carousel').carousel('set', 4);
+    bikeClone.attr("style", "");
+    bikeClone.attr("id", bikeID);
+    bikeClone.find(".bikeImg").attr("src", img);
+    bikeClone.find(".gears").text(gears);
+    bikeClone.find(".brand").text(brand);
+    bikeClone.find(".description").text(description);
+    bikeClone.find(".frame_size").text("Frame Size: " + frame_size);
+    bikeClone.find(".price").attr("id", anchorID);
+    bikeClone.find(".price").text("Ride me home for: " + price);
+    if (i < 3){
+      $("#featureRow").append(bikeClone);
+    }
 
-
- // $(document).ready(function(){
- //   $('.carousel').carousel({indicators: true, dist: 0, shift: 100, padding: 1, noWrap: true,});
- //   $('.carousel').carousel('set', 1);
- // });
+  }
+}
+renderBikes(bikes);
