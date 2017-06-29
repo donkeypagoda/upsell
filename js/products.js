@@ -20,7 +20,7 @@ function renderBikes(bikes){
     bikeClone.find(".description").text(description);
     bikeClone.find(".frame_size").text("Frame Size: " + frame_size);
     bikeClone.find(".price").attr("id", anchorID);
-    bikeClone.find(".price").text("Ride me home for: " + price);
+    bikeClone.find(".price").text("$" + price);
     if (i < 3){
       $("#row0").append(bikeClone);
     }
@@ -36,3 +36,8 @@ function renderBikes(bikes){
   }
 }
 renderBikes(bikes);
+
+function bikeSort(bikes){
+  
+
+}
