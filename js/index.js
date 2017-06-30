@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('.carousel').carousel({ fullWidth: true, duration: 300, indicators: true});
   $('.carousel').carousel('next');
   $('.carousel').carousel('prev');
+  $('.tooltipped').tooltip({delay: 50});
 });
 
 let timer;
@@ -77,6 +78,6 @@ $('button[type=submit]').on('click', function(){
   if (validate) {
     Materialize.toast('Thanks! You\'ll be hearing from us soon.', 4000)
   } else {
-     Materialize.toast('Please enter a valid email address.', 4000) 
+     Materialize.toast('Please enter a valid email address.', 4000)
   }
 })
