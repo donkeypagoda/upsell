@@ -19,6 +19,17 @@ a:hover {
   width: 100px;
 }
 
+footer li {
+  justify-content: space-around;
+}
+
+footer a {
+  colour: #eeeeee;
+}
+
+footer a:hover {
+  color: #ff8f00; 
+}
 
 
 /* Products Page focussed styles*/
