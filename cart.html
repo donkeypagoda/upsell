@@ -1,28 +1,261 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Our CSS link  -->
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <!-- javascript -->
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!--Our JS link -->
-    <script type="text/javascript" src="js/cart.js"></script>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Our CSS link  -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <!-- javascript -->
+  <!--Import jQuery before materialize.js-->
+  <script defer type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script defer type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Our JS link -->
+  <script defer type="text/javascript" src="js/bikes.js"></script>
+  <script defer type="text/javascript" src="js/cart.js"></script>
 
-    <title>UpCycle!</title>
-  </head>
-  <body>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+
+  <title>UpCycle!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-wrapper nav-band cyan">
+        <a href="index.html"><img class="logo-sizing waves-effect" src="img/logo.png"></a>
+        <div id="rightnav" class="valign-wrapper right hide-on-med-and-down">
+          <ul id="nav-mobile">
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">Bikes by Price Low to High</a></li>
+              <li><a href="#!">Bikes by Price High to Low</a></li>
+              <li><a href="#!">Show All</a></li>
+            </ul>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button btn cyan darken-2" href="products.html" data-activates="dropdown1">Bikes For Sale</a></li>
+            <li><a id="btn-small" class="cyclecart waves-effect waves-light btn amber darken-3"><i class="material-icons amber darken-3">shopping_cart</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <div class="row">
+    <div class="col s12 amber darken-3">
+      <div class="white-text center-align">
+        <h2>Checkout and roll out.</h2>
+      </div>
+    </div>
+  </div>
+  <!-- purchased items -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m3 l3">
+
+        <div class="card cyan">
+          <div class="card-content white-text">
+            <span class="card-title">Thank you!</span>
+            <p>This bike changes everything.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4 l4">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bike 1</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>Bike 2</td>
+              <td>$95</td>
+            </tr>
+            <tr>
+              <td>Bike 3</td>
+              <td>$120</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- billing and shipping info -->
+  <div class="container">
+    <div class="row">
+
+      <!-- shipping -->
+      <div class="col s6 m6 l6">
+          <div class="amber darken-3 white-text">
+            <h5 class="center-align">Shipping</h5>
+          </div>
+
+
+        <div class="row">
+
+          <form >
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                <label for="disabled">Disabled</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                This is an inline input field:
+                <div class="input-field inline">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- billing -->
+      <div class="col s6 m6 l6">
+        <div class="amber darken-3 white-text">
+          <h5 class="center-align">Billing</h5>
+        </div>
+      </div>
 
 
 
-  </body>
+        <form class="col s6 m6 l6">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+              <label for="disabled">Disabled</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              This is an inline input field:
+              <div class="input-field inline">
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- footer -->
+  <footer class="cyan">
+    <div class="container">
+      <div class="row">
+
+        <div class="col l3 m3 s12">
+          <h5 class="white-text">Contact us</h5>
+          <div><i class="material-icons">phone</i> 206.206.2062
+          </div>
+          <div><i class="material-icons">email</i> <a href="mailto:upcycle@bikes.eco?subject=Mail from Our Site">upcycle@bikes.eco</a></div>
+          <div><i class="material-icons">my_location</i> 1 Troll Ave N, Seattle, WA 98103
+          </div>
+        </div>
+        <div class="col l3 m3 s12">
+          <h5 class="white-text">Links 2</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m3 s12">
+          <h5 class="white-text">Sitemap</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m3 s12">
+          <h5 class="white-text">Stop by</h5>
+          <div class="center-align">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5375.576424575366!2d-122.35174913118693!3d47.649682279085454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015012f8cec29%3A0x44eb64e227f59d11!2sTroll+Ave+N%2C+Seattle%2C+WA+98103!5e0!3m2!1sen!2sus!4v1498691152184"
+              width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright cyan darken-2">
+      <div class="container grey-text text-lighten-4">
+        © 2017 Copyright Christopher Stewart and Heather Arvidson. Photos by Matt Saling, Sanwal Deen, and Clem Onojeghuo on Unsplash.
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

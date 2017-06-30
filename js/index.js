@@ -68,3 +68,5 @@ $('.price').on('click', function(event) {
   // console.log(price);
   cartCounter++;
 });
+
+//validate email
