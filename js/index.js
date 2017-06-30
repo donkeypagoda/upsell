@@ -73,5 +73,10 @@ $('.price').on('click', function(event) {
 $('button[type=submit]').on('click', function(){
   event.preventDefault();
   const $email = $('#email').val();
-  console.log($email);
+  const validate = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test($email);
+  if (validate) {
+    Materialize.toast('Thanks! You\'ll be hearing from us soon.', 4000)
+  } else {
+     Materialize.toast('Please enter a valid email address.', 4000) 
+  }
 })
