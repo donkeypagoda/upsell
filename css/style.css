@@ -16,8 +16,9 @@ a:hover {
 }
 /*footer*/
 .bike-orgs {
-  width: 60px;
-  max-height: 60px;
+  width: 50px;
+  max-height: 50px;
+  padding-bottom: 10px;
 }
 
 footer li {
