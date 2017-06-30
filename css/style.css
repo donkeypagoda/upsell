@@ -2,7 +2,9 @@
 /*div {
   border: 1px solid red;
 }*/
-
+a:hover {
+  color: amber;
+}
 /*Index page focussed styles*/
 .carousel-item {
   width: 100%;
@@ -12,7 +14,10 @@
   padding-top: 25px;
   padding-left: 15px;
 }
-
+/*footer*/
+.bike-orgs {
+  width: 100px;
+}
 
 
 
