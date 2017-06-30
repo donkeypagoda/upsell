@@ -13,24 +13,24 @@ autoplay()
 function autoplay() {
     $('.carousel').carousel('next');
     timer = setTimeout(autoplay, 5000);
-    console.log("autoplay invoked");
+    // console.log("autoplay invoked");
 }
 
 $('.carousel').on('mousedown', function(event) {
   clearTimeout(timer);
-  console.log("timer reset");
-  console.log(event);
+  // console.log("timer reset");
+  // console.log(event);
 });
 
 $('.carousel').on('mouseup', function(event) {
   timer = setTimeout(autoplay, 5000);
-  console.log("timer restarted");
-  console.log(event);
+  // console.log("timer restarted");
+  // console.log(event);
 })
 
 //feature bikes
 function renderBikes(bikes){
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 3; i++) {
     let bikeClone = $("#featureTemp").clone();
     let bikeID = "bike_" + i;
     let img = bikes[i].img;
@@ -70,3 +70,8 @@ $('.price').on('click', function(event) {
 });
 
 //validate email
+$('button[type=submit]').on('click', function(){
+  event.preventDefault();
+  const $email = $('#email').val();
+  console.log($email);
+})
