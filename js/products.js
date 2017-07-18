@@ -16,6 +16,11 @@ function renderBikes(bikes){
   $("#row1").empty();
   $("#row2").empty();
   $("#row3").empty();
+
+  // COMMENT: Putting the for loop below in a function will make your code cleaner,
+  // COMMENT: Also, you could have used a .map().
+  // COMMENT: A .map() is useful for when you want to transform all the elemnts in an
+  // COMMENT: array, and keep the same order
   for (let i = 0; i < 12; i++) {
     let bikeClone = $("#cardTemp").clone();
     let bikeID = "bike_" + i;
@@ -51,6 +56,8 @@ function renderBikes(bikes){
   }
 }
 
+
+// COMMENT: Good use of the .sort()
 function bikeSort(sortType){
   let newBikes = [];
   if (sortType === "all"){
