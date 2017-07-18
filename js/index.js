@@ -1,3 +1,7 @@
+// COMMENT: I have no specific comments for this file, just some overall observations
+// COMMENT: Please remove all console.log and unused code
+// COMMENT: Group all the functions together and expressions tpgether
+
 // index javascript
 
 //carousel
@@ -62,6 +66,8 @@ renderBikes(bikes);
 let cartCounter = 0;
 //get price of item
 $('.price').on('click', function(event) {
+
+  // COMMENT: Remove all unsused code.
   // const clicked = event.target.innerText;
   // const dollar = clicked.indexOf('$');
   // const price = clicked.slice(1, -1);

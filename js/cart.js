@@ -1,3 +1,5 @@
+// COMMENT: Remove all unused code
+
 // cart javascript
 
 // event listener
